@@ -64,8 +64,8 @@ see a tracker of rewards compounded over time.
 
 ## Video Walkthrough
 
-<p align="center">
-  <img src="assets/uno_demo.gif" width="300" title="Rewards Comparison Feature">
+<p align="left">
+  <img src="assets/uno_demo.gif" width="200" title="Rewards Comparison Feature">
 </p>
 
 ## Notes
