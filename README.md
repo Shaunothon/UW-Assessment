@@ -64,16 +64,9 @@ see a tracker of rewards compounded over time.
 
 ## Before & After
 
-<div style="display:flex; gap:16px; align-items:flex-start;">
-  <div style="flex:1; text-align:left;">
-    <p><strong>Existing Transaction Detail</strong></p>
-    <img src="assets/uno_actual.png" width="250"/>
-  </div>
-  <div style="flex:1; text-align:left;">
-    <p><strong>Decision Transparency (proposed)</strong></p>
-    <img src="assets/uno_mock1.png" width="250"/>
-  </div>
-</div>
+|          Existing Transaction Detail           |       Decision Transparency (proposed)        |
+| :--------------------------------------------: | :-------------------------------------------: |
+| <img src="assets/uno_actual.png" width="250"/> | <img src="assets/uno_mock2.png" width="250"/> |
 
 ## Video Walkthrough
 
