@@ -45,10 +45,10 @@ the intro period hasn't expired. Else, we return to standard reward selection pr
 The tradeoff with this feature is it's pre Passkit Payment handoff. My goal was to implement a feature that would scrape data
 from Apple Wallet and pass it back to Uno Wallet after the PKPaymentAuthorizationController is activated. However, iOS has
 strict rules regarding Sandbox security protocols that don't allow for data to be transferred outside of Apple Wallet.
-I believe this is why you told me this is the only app approved to be used on top of Apple Wallet. Since the application
-relinquishes control of the selected card's function after it is selected, Uno Wallet is not involved with the payment process
-which means you avoid the process of financial legality and the inundation of paperwork required to be filed with banking institutions.
-You also avoid costly partnerships and integration with financial and payment institutions such as Stripe or Plaid.
+The PassKit handoff architecture is precisely what enables Uno Wallet to operate as a card optimization layer on top of Apple Wallet.
+Since the application relinquishes control of the selected card's function after it is selected, Uno Wallet is not involved with the
+payment process which means you avoid the process of financial legality and the inundation of paperwork required to be filed with banking
+institutions. You also avoid costly partnerships and integration with financial and payment institutions such as Stripe or Plaid.
 
 One edge case considered is if two cards have identical rewards, we select the card used less frequently. This allows a small balance
 to accumulate on the less popular card which in extreme cases would negate the account closing if inactive for too long.
@@ -61,6 +61,19 @@ This way, people feel impressed with their download and continue to use the appl
 But for the users who are avid credit card churners, this feature will secure a slightly higher retention rate 6 months down
 the road. For Finance Kit hypothetical (v2), the user retention rate for 6 month time horizon drastically improves as users
 see a tracker of rewards compounded over time.
+
+## Before & After
+
+<div style="display:flex; gap:16px; align-items:flex-start;">
+  <div style="flex:1; text-align:left;">
+    <p><strong>Existing Transaction Detail</strong></p>
+    <img src="assets/uno_actual.png" width="250"/>
+  </div>
+  <div style="flex:1; text-align:left;">
+    <p><strong>Decision Transparency (proposed)</strong></p>
+    <img src="assets/uno_mock1.png" width="250"/>
+  </div>
+</div>
 
 ## Video Walkthrough
 
